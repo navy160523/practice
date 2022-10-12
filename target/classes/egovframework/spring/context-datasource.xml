@@ -21,9 +21,9 @@
 <!--   Mysql (POM에서 commons-dbcp, mysql-connector-java 관련 라이브러리 설정 )  -->
     <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="com.mariadb.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://192.168.0.8:3306/test" />
+        <property name="url" value="jdbc:mysql://127.0.0.1:3306/test" />
         <property name="username" value="root"/>
-        <property name="password" value="!2020@mysql#8"/>
+        <property name="password" value="nabda"/>
     </bean>
     
     

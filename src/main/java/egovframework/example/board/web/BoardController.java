@@ -27,11 +27,7 @@ public class BoardController {
 		
 		return "board/mgmt";
 	}
-	@RequestMapping(value = "/view.do")
-	public String view(ModelMap model) throws Exception {
-		
-		return "board/view";
-	}
+	
 	@RequestMapping(value = "/login.do")
 	public String login(@RequestParam("user_id")String user_id, @RequestParam("password")String password,
 			ModelMap model,
@@ -56,5 +52,10 @@ public class BoardController {
 		}
 		
 		return "board/list";
+	}
+	@RequestMapping(value = "/view.do")
+	public String view(ModelMap model) throws Exception {
+		
+		return "board/view";
 	}
 }
